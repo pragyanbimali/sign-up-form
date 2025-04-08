@@ -1,0 +1,82 @@
+* {
+    box-sizing: border-box;
+    /*border: 1px solid green;*/
+}
+
+body {
+    position: relative;
+    background-color: #eaedf0;
+}
+
+.main-container {
+    position: absolute;
+    top:150px;
+    display: flex;
+    justify-content:space-evenly;
+    align-items: center;
+    height: 600px;
+    border: 0.5px solid grey;
+    border-radius: 10px;
+    box-shadow: 5px 5px 15px gray;
+    gap: 2.5rem;
+}
+
+.logo-container {
+    background-image: url("background.jpg");
+    height: 100%;
+    width: 400px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-top-left-radius: inherit;
+    border-bottom-left-radius: inherit;
+}
+
+.img-logo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.5);
+    width: inherit;
+    height: 20%;
+    margin-bottom: 200px;
+    gap: 5px;
+}
+
+.logo {
+    width: 70px;
+    height: 80px;
+}
+
+@font-face {
+    font-family: "Norse-Bold";
+    src: url(Norse-Bold.otf);
+}
+
+.logo-name {
+    font-family: "Norse-Bold";
+    color: aliceblue;
+    font-size: 60px;
+}
+
+.content-container {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+}
+
+.para {
+    text-align: center;
+}
+
+.form-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
