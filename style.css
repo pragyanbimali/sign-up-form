@@ -1,16 +1,19 @@
 * {
     box-sizing: border-box;
     /*border: 1px solid green;*/
+    margin: 0;
 }
 
 body {
     position: relative;
     background-color: #eaedf0;
+    font-family:Arial, Helvetica, sans-serif;
 }
 
 .main-container {
     position: absolute;
     top:150px;
+    right:20vw;
     display: flex;
     justify-content:space-evenly;
     align-items: center;
@@ -18,7 +21,7 @@ body {
     border: 0.5px solid grey;
     border-radius: 10px;
     box-shadow: 5px 5px 15px gray;
-    gap: 2.5rem;
+    width: 60%;
 }
 
 .logo-container {
@@ -67,16 +70,85 @@ body {
     flex-direction: column;
     align-items: flex-start;
     justify-content: center;
+    margin-top: 5px;
+    margin-bottom: 5px;
 }
 
-.para {
-    text-align: center;
+.para-container {
+    align-items: center;
 }
 
 .form-container {
+    box-shadow: 5px 5px 15px gray;
+    width: 100%;
+    background-color: white;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.names,
+.pass,
+.contact
+ {
     display: flex;
     justify-content: center;
     align-items: center;
-    flex-wrap: wrap;
+    gap: 60px;
 }
 
+.first-name-container,
+.second-name-container,
+.email-container,
+.tel-container,
+.pass-container,
+.confirm-pass-container
+ {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-direction: column;
+}
+
+.para,
+.names,
+.pass,
+.contact,
+button,
+.login
+{
+    margin-bottom: 15px;
+    margin-left: 20px;
+}
+
+.names {
+    margin-top: 15px;
+}
+
+button {
+    margin-top: 30px;
+}
+
+.para {
+    margin-bottom: 40px;
+    font-weight: 700;
+}
+
+input {
+    border-radius: 5px;
+    border: 1px solid gray;
+    height: 30px;
+    width: 300px;
+}
+
+label {
+    font-size: 10px;
+    font-family: "Roboto Mono", sans-serif;
+    color: rgb(37, 37, 22);
+}
+
+input:focus {
+    box-shadow: 5px 5px 15px gray;
+    border-color: aqua;
+    border: 5px;
+}

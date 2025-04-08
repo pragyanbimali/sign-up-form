@@ -5,6 +5,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>SignUp Form</title>
     <link rel="stylesheet" href="style.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap');
+    </style>
 </head>
 <body>
     <div class="main-container">
@@ -21,29 +24,43 @@
             </div>
             <div class="form-container">
                 <form>
-                    <label for="first-name">First Name</label>
-                    <input type="text" id="first-name" name="first-name">
-
-                    <label for="second-name">Second Name</label>
-                    <input type="text" id="second-name" name="second-name">
-
-                    <label for="email">Email</label>
-                    <input type="email" id="email" name="email">
-
-                    <label for="telephone">Phone Number</label>
-                    <input type="tel" id="telephone" name="telephone">
-
-                    <label for="pw">Password</label>
-                    <input type="password" id="pw" name="pw">
-
-                    <label for="pw">Confirm Password</label>
-                    <input type="password" id="pw" name="pw">
-
+                    <div class="names">
+                        <div class="first-name-container">
+                            <label for="first-name">FIRST NAME</label>
+                            <input type="text" id="first-name" name="first-name">
+                        </div>
+                        <div class="second-name-container">
+                            <label for="second-name">SECOND NAME</label>
+                            <input type="text" id="second-name" name="second-name">
+                        </div>
+                    </div>
+                    
+                    <div class="contact">
+                        <div class="email-container">
+                            <label for="email">EMAIL</label>
+                            <input type="email" id="email" name="email">
+                        </div>
+                        <div class="tel-container">
+                            <label for="telephone">PHONE NUMBER</label>
+                            <input type="tel" id="telephone" name="telephone">
+                        </div>
+                    </div>
+                    
+                    <div class="pass">
+                        <div class="pass-container">
+                            <label for="pw">PASSWORD</label>
+                            <input type="password" id="pw" name="pw">
+                        </div>
+                        <div class="confirm-pass-container">
+                            <label for="pw">CONFIRM PASSWORD</label>
+                            <input type="password" id="pw" name="pw">
+                        </div>
+                    </div>                 
                 </form>
             </div>
             <div class="bottom-container">
                 <button type="submit">Create Account</button>
-                <p>Already have an account? <a href="#">Log In</p>
+                <p class="login">Already have an account? <a href="#">Log In</p>
             </div>
         </div>
     </div>
